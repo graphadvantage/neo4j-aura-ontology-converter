@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "transport": "file://www.ibm.com/WSRR/Transport#"
+  },
+  "@graph": [
+    {
+      "@id": "transport:AirTransport",
+      "@type": "owl:Class",
+      "rdfs:comment": "Middle-level air transport class.",
+      "rdfs:label": "Air Transport.",
+      "rdfs:subClassOf": {
+        "@id": "transport:Transport"
+      }
+    },
+    {
+      "@id": "transport:Bus",
+      "@type": "owl:Class",
+      "rdfs:comment": "Bottom-level bus class.",
+      "rdfs:label": "Bus.",
+      "rdfs:subClassOf": {
+        "@id": "transport:LandTransport"
+      }
+    },
+    {
+      "@id": "transport:Car",
+      "@type": "owl:Class",
+      "rdfs:comment": "Bottom-level car class.",
+      "rdfs:label": "Car.",
+      "rdfs:subClassOf": {
+        "@id": "transport:LandTransport"
+      }
+    },
+    {
+      "@id": "transport:Transport",
+      "@type": "owl:Class",
+      "rdfs:comment": "Top-level root class for transport.",
+      "rdfs:label": "Transport"
+    },
+    {
+      "@id": "transport:TransportOntology",
+      "@type": "owl:Ontology",
+      "rdfs:comment": "Cars and buses and some superclasses.",
+      "rdfs:label": "A transport classification system."
+    },
+    {
+      "@id": "transport:LandTransport",
+      "@type": "owl:Class",
+      "rdfs:comment": "Middle-level land transport class.",
+      "rdfs:label": "Land Transport.",
+      "rdfs:subClassOf": {
+        "@id": "transport:Transport"
+      }
+    }
+  ]
+}

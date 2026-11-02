@@ -1,0 +1,111 @@
+{
+  "schema": "https://neo4j.com/docs/ontology-graph-spec/1.0.0/schema.json",
+  "version": "1",
+  "id": "Transport Ontology",
+  "name": "Transport Ontology",
+  "description": "RDF/OWL projection; see accompanying conversion report.",
+  "nodes": {
+    "n:0": {
+      "labels": {
+        "identifier": "AirTransport"
+      },
+      "extensions": {
+        "display": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "description": "Air Transport.\n\nMiddle-level air transport class.\n\nSource: file://www.ibm.com/WSRR/Transport#AirTransport"
+    },
+    "n:1": {
+      "labels": {
+        "identifier": "Bus"
+      },
+      "extensions": {
+        "display": {
+          "x": 250,
+          "y": 0
+        }
+      },
+      "description": "Bus.\n\nBottom-level bus class.\n\nSource: file://www.ibm.com/WSRR/Transport#Bus"
+    },
+    "n:2": {
+      "labels": {
+        "identifier": "Car"
+      },
+      "extensions": {
+        "display": {
+          "x": 500,
+          "y": 0
+        }
+      },
+      "description": "Car.\n\nBottom-level car class.\n\nSource: file://www.ibm.com/WSRR/Transport#Car"
+    },
+    "n:3": {
+      "labels": {
+        "identifier": "LandTransport"
+      },
+      "extensions": {
+        "display": {
+          "x": 0,
+          "y": 180
+        }
+      },
+      "description": "Land Transport.\n\nMiddle-level land transport class.\n\nSource: file://www.ibm.com/WSRR/Transport#LandTransport"
+    },
+    "n:4": {
+      "labels": {
+        "identifier": "Transport"
+      },
+      "extensions": {
+        "display": {
+          "x": 250,
+          "y": 180
+        }
+      },
+      "description": "Transport\n\nTop-level root class for transport.\n\nSource: file://www.ibm.com/WSRR/Transport#Transport"
+    }
+  },
+  "relationships": {
+    "r:0": {
+      "type": "IS_A",
+      "from": {
+        "node": "n:0"
+      },
+      "to": {
+        "node": "n:4"
+      },
+      "description": "named subclass axiom: subClassOf"
+    },
+    "r:1": {
+      "type": "IS_A",
+      "from": {
+        "node": "n:1"
+      },
+      "to": {
+        "node": "n:3"
+      },
+      "description": "named subclass axiom: subClassOf"
+    },
+    "r:2": {
+      "type": "IS_A",
+      "from": {
+        "node": "n:2"
+      },
+      "to": {
+        "node": "n:3"
+      },
+      "description": "named subclass axiom: subClassOf"
+    },
+    "r:3": {
+      "type": "IS_A",
+      "from": {
+        "node": "n:3"
+      },
+      "to": {
+        "node": "n:4"
+      },
+      "description": "named subclass axiom: subClassOf"
+    }
+  }
+}

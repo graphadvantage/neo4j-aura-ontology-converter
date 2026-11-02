@@ -1,0 +1,22 @@
+<file://www.ibm.com/WSRR/Transport#AirTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#AirTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Middle-level air transport class." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#AirTransport> <http://www.w3.org/2000/01/rdf-schema#label> "Air Transport." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#AirTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file://www.ibm.com/WSRR/Transport#Transport> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Bus> <http://www.w3.org/2000/01/rdf-schema#comment> "Bottom-level bus class." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Bus> <http://www.w3.org/2000/01/rdf-schema#label> "Bus." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file://www.ibm.com/WSRR/Transport#LandTransport> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Car> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Car> <http://www.w3.org/2000/01/rdf-schema#comment> "Bottom-level car class." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Car> <http://www.w3.org/2000/01/rdf-schema#label> "Car." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Car> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file://www.ibm.com/WSRR/Transport#LandTransport> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#LandTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#LandTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Middle-level land transport class." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#LandTransport> <http://www.w3.org/2000/01/rdf-schema#label> "Land Transport." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#LandTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file://www.ibm.com/WSRR/Transport#Transport> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Top-level root class for transport." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#TransportOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#TransportOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "Cars and buses and some superclasses." <urn:transport:example> .
+<file://www.ibm.com/WSRR/Transport#TransportOntology> <http://www.w3.org/2000/01/rdf-schema#label> "A transport classification system." <urn:transport:example> .

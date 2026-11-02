@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="file://www.ibm.com/WSRR/Transport#LandTransport">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Land Transport.</rdfs:label>
+    <rdfs:comment>Middle-level land transport class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="file://www.ibm.com/WSRR/Transport#Transport"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file://www.ibm.com/WSRR/Transport#AirTransport">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Air Transport.</rdfs:label>
+    <rdfs:comment>Middle-level air transport class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="file://www.ibm.com/WSRR/Transport#Transport"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file://www.ibm.com/WSRR/Transport#Transport">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Transport</rdfs:label>
+    <rdfs:comment>Top-level root class for transport.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="file://www.ibm.com/WSRR/Transport#Bus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bus.</rdfs:label>
+    <rdfs:comment>Bottom-level bus class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="file://www.ibm.com/WSRR/Transport#LandTransport"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file://www.ibm.com/WSRR/Transport#Car">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Car.</rdfs:label>
+    <rdfs:comment>Bottom-level car class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="file://www.ibm.com/WSRR/Transport#LandTransport"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file://www.ibm.com/WSRR/Transport#TransportOntology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>A transport classification system.</rdfs:label>
+    <rdfs:comment>Cars and buses and some superclasses.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<file://www.ibm.com/WSRR/Transport#AirTransport> a owl:Class ;
+    rdfs:label "Air Transport." ;
+    rdfs:comment "Middle-level air transport class." ;
+    rdfs:subClassOf <file://www.ibm.com/WSRR/Transport#Transport> .
+
+<file://www.ibm.com/WSRR/Transport#Bus> a owl:Class ;
+    rdfs:label "Bus." ;
+    rdfs:comment "Bottom-level bus class." ;
+    rdfs:subClassOf <file://www.ibm.com/WSRR/Transport#LandTransport> .
+
+<file://www.ibm.com/WSRR/Transport#Car> a owl:Class ;
+    rdfs:label "Car." ;
+    rdfs:comment "Bottom-level car class." ;
+    rdfs:subClassOf <file://www.ibm.com/WSRR/Transport#LandTransport> .
+
+<file://www.ibm.com/WSRR/Transport#TransportOntology> a owl:Ontology ;
+    rdfs:label "A transport classification system." ;
+    rdfs:comment "Cars and buses and some superclasses." .
+
+<file://www.ibm.com/WSRR/Transport#LandTransport> a owl:Class ;
+    rdfs:label "Land Transport." ;
+    rdfs:comment "Middle-level land transport class." ;
+    rdfs:subClassOf <file://www.ibm.com/WSRR/Transport#Transport> .
+
+<file://www.ibm.com/WSRR/Transport#Transport> a owl:Class ;
+    rdfs:label "Transport" ;
+    rdfs:comment "Top-level root class for transport." .
